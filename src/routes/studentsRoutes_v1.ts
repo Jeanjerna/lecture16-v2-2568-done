@@ -17,6 +17,7 @@ const router = Router();
 
 // GET /students
 // get students (by program)
+// GET /students?program=IT
 router.get("/students", (req: Request, res: Response) => {
   try {
     const program = req.query.program;
